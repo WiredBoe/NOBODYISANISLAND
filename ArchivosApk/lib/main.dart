@@ -126,7 +126,7 @@ class _BlockSettingsScreenState extends State<BlockSettingsScreen> {
   final message2 = OSCMessage('/Platform/Green', arguments: [greenValue]);
   final message3 = OSCMessage('/Platform/Blue', arguments: [blueValue]);
   // Create an OSC socket and send the message
-  final socket = OSCSocket(destination: InternetAddress('192.168.1.130'), destinationPort: 8000);
+  final socket = OSCSocket(destination: InternetAddress(''), destinationPort: 8000);
 
   socket.send(message1);
   socket.send(message2);
@@ -150,7 +150,7 @@ class _BlockSettingsScreenState extends State<BlockSettingsScreen> {
   final message2 = OSCMessage('/Platform/Green', arguments: [greenValue]);
   final message3 = OSCMessage('/Platform/Blue', arguments: [blueValue]);
   // Create an OSC socket and send the message
-  final socket = OSCSocket(destination: InternetAddress('192.168.1.130'), destinationPort: 8000);
+  final socket = OSCSocket(destination: InternetAddress(''), destinationPort: 8000);
 
   socket.send(message1);
   socket.send(message2);
